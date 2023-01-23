@@ -8,7 +8,7 @@
   <img src="https://user-images.githubusercontent.com/66283452/198294567-6a53415a-7b3e-48ea-ab58-482d849c6309.svg" alt="drawing" width="400"/>
 </p>
 
-*Obs: Business problem, company and data are fictitious.*
+*Obs: The business problem is fictitious, although both company and data are real.*
 
 *The in-depth Python code explanation is available in [this](https://github.com/brunodifranco/project-insuricare-ranking/blob/main/insuricare.ipynb) Jupyter Notebook.*
 
