@@ -154,7 +154,7 @@ The data was split in users and sessions data, which is the internet browsing in
 
 # 6. **Machine Learning Models**
 
-<p align="justify"> Seven models were trained using cross-validation, so we can provide predictions on the five most likely countries for an US Airbnb user to book their next destinations: </p>
+<p align="justify"> Initially, seven models were trained using cross-validation, so we can provide predictions on the five most likely countries for an US Airbnb user to book their next destinations: </p>
 
 - Logistic Regression
 - Decision Tree Classifier
@@ -168,50 +168,39 @@ The initial cross validation performance for all seven algorithms are displayed 
 
 <div align="center">
 
-|         **Model**        | **NDCG at K** |
-|:------------------------:|:------------------:|
-|    LGBM Classifier       | 0.2789 +/- 0.0003  |
-|    AdaBoost Classifier   | 0.2783 +/- 0.0007	|
-|      CatBoost Classifier | 0.2783 +/- 0.0005	|
-|   XGBoost Classifier     | 0.2771 +/- 0.0006  |
-|    Logistic Regression   | 0.2748 +/- 0.0009  |
-| Random Forest Classifier | 0.2719 +/- 0.0005  |
-|      KNN Classifier      | 0.2392 +/- 0.0006  |
+|         **Model**           | **NDCG at K** |
+|:---------------------------:|:------------------:|
+|    LGBM Classifier          | 0.8496 +/- 0.0006  |
+|    XGBoost Classifier       |	0.8482 +/- 0.0004	|
+|    Random Forest Classifier | 0.8451 +/- 0.0006	|
+|    AdaBoost Classifier      | 0.8429 +/- 0.0019  |
+|    ExtraTrees Classifier    | 0.8390 +/- 0.0008  |
+|    Logistic Regression      | 0.8377 +/- 0.001  |
+|    Decision Tree Classifier | 0.7242 +/- 0.0023 |
 </div>
 
-<i>K is either equal to 5, given our business problem. </i>
+<i>Where K is equal to 5, given our business problem. </i>
 
-<p align="justify"> The <b>Light GBM Classifier</b> model was chosen for hyperparameter tuning, since it's fast to train and tune, whilst being the one with the best results without any tuning. In addition to that, it's much better for deployment, as it's much lighter than a XGBoost or Random Forest for instance, especially given the fact that we're using a free deployment cloud. More information in Section XXXXXXXXXXXXXXXXXX.</p>
+<p align="justify"> The <b>Light GBM Classifier</b> model was chosen for hyperparameter tuning, since it's fast to train and tune, whilst being also the one with the best result without any tuning. In addition to that, it's much better for deployment, as it's much lighter than a XGBoost or Random Forest for instance, especially given the fact that we're using a free deployment cloud. More information in Section XXXXXXXXXXXXXXXXXX.</p>
 
-<p align="justify"> Instead of using cross-validation, which uses only the training dataset, we tuned the model by comparing its performance on the test dataset, which was split before Data Preprocessing, to avoid Data Leakage. After tuning LGBM's hyperparameters using [Bayesian Optimization with Optuna](https://optuna.readthedocs.io/en/stable/index.html) the model performance has improved:</p>
+<p align="justify"> Instead of using cross-validation, which uses only the training dataset, we tuned the model by comparing its performance on the test dataset, which was split before Data Preparation, to avoid <a href="https://towardsdatascience.com/data-leakage-in-machine-learning-how-it-can-be-detected-and-minimize-the-risk-8ef4e3a97562">Data Leakage</a>. After tuning LGBM's hyperparameters using  <a href="https://optuna.readthedocs.io/en/stable/index.html">Bayesian Optimization with Optuna</a> the model performance has improved, as expected:</p>
 
-ARRUMAR OS LINKS
-
- <a href="https://github.com/brunodifranco/project-insuricare-ranking#7-business-and-financial-results"> Section 7</a>
-
+<div align="center">
 <table>
 <tr><th>Before Tuning </th><th>Final Model</th></tr>
 <tr><td>
 
 |         **Model**        | **NDCG at K** |
-|--|--|
-|LGBM Classifier | 0.2793 +/- 0.0005|
+|:--:|:--:|
+|LGBM Classifier | 0.8514|
 
 </td><td>
  
 |         **Model**        | **NDCG at K** |
-|--|--|
-|LGBM Classifier | 0.2793 +/- 0.0005|
+|:--:|:--:|
+|LGBM Classifier | 0.8542|
 
 </td></tr> </table>
-
-
-
-<div align="center">
-
-|         **Model**        | **Precision at K** | **Recall at K** |
-|:------------------------:|:------------------:|:---------------:|
-|      LGBM Classifier     | 0.2793 +/- 0.0005  |0.9344 +/- 0.0017| 
 
 </div>
 
