@@ -15,18 +15,7 @@
 # 1. **Airbnb and Business Problem**
 
 <p align="justify"> 
-Airbnb operates as an online marketplace for short-term homestays. Their business model consists of charging a comission from each booking. So they can better understand their customers behaviors and most desired booking locations a Data Scientist was hired, in order to predict the five most likely countries for a US user to make their next booking. There are 12 possible outcomes of the destination country: USA, France, Canada, Great Britain, Spain, Italy, Portugal, New Zealand, Germany and Australia, as well as 'NDF' (which means there wasn't a booking) and other countries. 
-
-
- Insuricare is an insurance company that has provided health insurance to its customers, and now they are willing to sell a new vehicle insurance to their clients. To achieve that, Insuricare conducted a research with around 305 thousand customers that bought the health insurance last year, asking each one if they would be interested in buying the new insurance. This data was stored in the company's database, alongside other customers' features. 
-
-Then, Insuricare Sales Team selected around 76 thousand new customers, which are people that didn't respond to the research, to offer the new vehicle insurance. However, due to a limit call <i>restriction*</i> Insuricare must choose a way of selecting which clients to call: </p>
-
-- Either select the customers randomly, which is the <b>baseline model</b> previously used by the company.
-  
-- Or, the Data Science Team will provide, by using a Machine Learning (ML) model, an ordered list of these new customers, based on their propensity score of buying the new insurance.
-
-<i> * Insuricare Sales Team would like to make 20,000 calls, but it can be pushed to 40,000 calls. </i>
+Airbnb is an online marketplace for short-term homestays, and their business model consists of charging a comission from each booking. So they can better understand their customers behaviors and most desired booking locations a Data Scientist was hired, in order to predict the five most likely countries for a USA user to make their next booking. Airbnb provided data from over 200 thousand users, split in two different datasets (more information in <a href="https://github.com/brunodifranco/project-airbnb-classification#2-data-overview">Section 2</a>), so the predictions could be made for over 60 thousand users. There are 12 possible outcomes of the destination country: 'USA', 'France', 'Canada', 'Great Britain', 'Spain', 'Italy', 'Portugal', 'New Zealand', 'Germany' and 'Australia', as well as 'NDF' (which means there wasn't a booking) and 'other countries'. </p>
 
 # 2. **Data Overview**
 The training data was collected from a PostgreSQL Database. The initial features descriptions are available below:
