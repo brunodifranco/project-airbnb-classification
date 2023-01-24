@@ -18,12 +18,11 @@
 Airbnb is an online marketplace for short-term homestays, and their business model consists of charging a comission from each booking. So they can better understand their customers behaviors and most desired booking locations a Data Scientist was hired, in order to predict the five most likely countries for a USA user to make their next booking. Airbnb provided data from over 200 thousand users, split in two different datasets (more information in <a href="https://github.com/brunodifranco/project-airbnb-classification#2-data-overview">Section 2</a>), so the predictions could be made for over 60 thousand users. There are 12 possible outcomes of the destination country: 'USA', 'France', 'Canada', 'Great Britain', 'Spain', 'Italy', 'Portugal', 'New Zealand', 'Germany' and 'Australia', as well as 'NDF' (which means there wasn't a booking) and 'other countries'. </p>
 
 # 2. **Data Overview**
-The data was split in users data and sessions data, which is their internet browsing information. The initial features descriptions are available below:
-
-## Users Data:
-
+The data was split in users and sessions data, which is the internet browsing information. The Initial features descriptions are available below:
 
 <div align="center">
+ 
+## Users Data:
 
 | **Feature**          | **Definition** |
 |----------------------|----------------|
@@ -44,12 +43,12 @@ The data was split in users data and sessions data, which is their internet brow
 |       first_browser        | first browser used e.g. Chrome, FireFox, Safari |
 |       country_destination        | This is the target variable |
 
-<div>  
-   
+</div>  
+
+<div align="center">
+ 
 ## Sessions Data:
  
- <div align="center">
-
 | **Feature**          | **Definition** |
 |----------------------|----------------|
 |       user_id      | to be joined with the column 'id' in users table |
@@ -59,9 +58,9 @@ The data was split in users data and sessions data, which is their internet brow
 |       device_type    | device used on each action |
 |       secs_elapsed      | the time between two actions recorded |
   
- <div>  
-
-<i>The data was collected from Kaggle</i>
+ </div>  
+  
+<i>The data was collected from Kaggle.</i>
 
 # 3. **Business Assumptions and Definitions**
 
