@@ -18,22 +18,50 @@
 Airbnb is an online marketplace for short-term homestays, and their business model consists of charging a comission from each booking. So they can better understand their customers behaviors and most desired booking locations a Data Scientist was hired, in order to predict the five most likely countries for a USA user to make their next booking. Airbnb provided data from over 200 thousand users, split in two different datasets (more information in <a href="https://github.com/brunodifranco/project-airbnb-classification#2-data-overview">Section 2</a>), so the predictions could be made for over 60 thousand users. There are 12 possible outcomes of the destination country: 'USA', 'France', 'Canada', 'Great Britain', 'Spain', 'Italy', 'Portugal', 'New Zealand', 'Germany' and 'Australia', as well as 'NDF' (which means there wasn't a booking) and 'other countries'. </p>
 
 # 2. **Data Overview**
-The training data was collected from a PostgreSQL Database. The initial features descriptions are available below:
+The data was split in users data and sessions data, which is their internet browsing information. The initial features descriptions are available below:
+
+## Users Data:
+
+
+<div align="center">
 
 | **Feature**          | **Definition** |
 |----------------------|----------------|
-| id                   | Unique ID for the customer|
-| gender               |Gender of the customer|
-| age                  |Age of the customer|
-| region_code          |   Unique code for the region of the customer|
-| policy_sales_channel |Anonymized Code for the channel of outreaching to the customer ie. Different Agents, Over Mail, Over Phone, In Person, etc|
-| driving_license      |0 : Customer does not have DL, 1 : Customer already has DL|
-| vehicle_age          |Age of the Vehicle|
-| vehicle_damage       |Yes : Customer got his/her vehicle damaged in the past. No : Customer didn't get his/her vehicle damaged in the past.|
-| previously_insured   |1 : Customer already has Vehicle Insurance, 0 : Customer doesn't have Vehicle Insurance|
-| annual_premium       |The amount customer needs to pay as premium in the year|
-| vintage              |Number of Days, Customer has been associated with the company|
-| response             | 1 : Customer is interested in the new insurance, 0 : Customer is not interested in the new insurance|
+|       id      | user id |
+|       date_account_created      | the date of account creation | 
+|       timestamp_first_active    | timestamp of the first activity |
+|       date_first_booking       | date of first booking |
+|       gender    | user's gender |
+|       age      | user's age |
+|       signup_method     | method of signing up e.g. facebook, basic, google |
+|       signup_flow        | the page a user came to signup up from |
+|       language        | international language preference |
+|       affiliate_channel        | what kind of paid marketing |
+|       affiliate_provider        | where the marketing is e.g. google, craigslist, other |
+|       first_affiliate_tracked        | whats the first marketing the user interacted with before the signing up |
+|       signup_app        | signup app  e.g. Web, Android |
+|       first_device_type        | first device type used e.g. Windows Desktop, IPhone, Android Phone|
+|       first_browser        | first browser used e.g. Chrome, FireFox, Safari |
+|       country_destination        | This is the target variable |
+
+<div>  
+   
+## Sessions Data:
+ 
+ <div align="center">
+
+| **Feature**          | **Definition** |
+|----------------------|----------------|
+|       user_id      | to be joined with the column 'id' in users table |
+|       action      | action performed e.g. show, search_results, confirm_email | 
+|       action_type    | action type performed e.g. view, click |
+|       action_detail       | action detail e.g. confirm_email_link, view_search_results |
+|       device_type    | device used on each action |
+|       secs_elapsed      | the time between two actions recorded |
+  
+ <div>  
+
+<i>The data was collected from Kaggle</i>
 
 # 3. **Business Assumptions and Definitions**
 
