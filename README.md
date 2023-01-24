@@ -215,39 +215,13 @@ The initial cross validation performance for all seven algorithms are displayed 
 <p align="justify"> NDCG at K <i>“measures the performance of a recommendation system based on the graded relevance of the recommended entities. It varies from 0.0 to 1.0, with 1.0 representing the ideal ranking of the entities.”</i> Therefore, for this instance (where k equals 5), <b>it not only measures how well we can predict the five most likely next booking locations for each user, but also how well can rank them from the most likely to the least</b>.</p>
 
 # 7. **Model Deployment and Results**
+<p align="justify"> The model deployment was performed by using three steps: 
+ 
+- <p align="justify"> <b>Step 1</b>: The original data (both datasets in <a href="https://github.com/brunodifranco/project-airbnb-classification#2-data-overview"> Section 2</a>) was saved in a PostgreSQL Database from <a href="https://neon.tech/">Neon.tech</a>. </p>
+ 
+ - <p align="justify"> <b>Step 2</b>: A Flask application was built using <a href="https://render.com/"> Render Cloud </a>, on which it extracts the original data from that PostgreSQL Database, creates predictions for each user and adds these predictions back in a different table inside the same Database. Let's name this table 'df_pred' for the sake of the explanation.</p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ - <p align="justify"> <b>Step 3</b>: Streamlit retrieves the df_pred data from the Database and displays it in a table inside Streamlit with filters, where you can find the five most likely destinations predictions for the 61 thousand USA Airbnb users. In addition to that, graphical analysis from the predictions were built, split by age, gender and overall analysis. This is the project's <b>Data Science Product</b>, and it can be accessed from anywhere in a Streamlit App.</p>
 
 
 
