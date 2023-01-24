@@ -5,15 +5,20 @@
 <p align="center">A Classification Project</p>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/198294567-6a53415a-7b3e-48ea-ab58-482d849c6309.svg" alt="drawing" width="400"/>
+  <img src="https://user-images.githubusercontent.com/66283452/214205680-dccc15c4-ec86-439c-b50a-b96593c4416b.png" alt="drawing" width="450"/>
 </p>
 
 *Obs: The business problem is fictitious, although both company and data are real.*
 
 *The in-depth Python code explanation is available in [this](https://github.com/brunodifranco/project-insuricare-ranking/blob/main/insuricare.ipynb) Jupyter Notebook.*
 
-# 1. **Insuricare and Business Problem**
-<p align="justify"> Insuricare is an insurance company that has provided health insurance to its customers, and now they are willing to sell a new vehicle insurance to their clients. To achieve that, Insuricare conducted a research with around 305 thousand customers that bought the health insurance last year, asking each one if they would be interested in buying the new insurance. This data was stored in the company's database, alongside other customers' features. 
+# 1. **Airbnb and Business Problem**
+
+<p align="justify"> 
+Airbnb operates as an online marketplace for short-term homestays. Their business model consists of charging a comission from each booking. So they can better understand their customers behaviors and most desired booking locations a Data Scientist was hired, in order to predict the five most likely countries for a US user to make their next booking. There are 12 possible outcomes of the destination country: USA, France, Canada, Great Britain, Spain, Italy, Portugal, New Zealand, Germany and Australia, as well as 'NDF' (which means there wasn't a booking) and other countries. 
+
+
+ Insuricare is an insurance company that has provided health insurance to its customers, and now they are willing to sell a new vehicle insurance to their clients. To achieve that, Insuricare conducted a research with around 305 thousand customers that bought the health insurance last year, asking each one if they would be interested in buying the new insurance. This data was stored in the company's database, alongside other customers' features. 
 
 Then, Insuricare Sales Team selected around 76 thousand new customers, which are people that didn't respond to the research, to offer the new vehicle insurance. However, due to a limit call <i>restriction*</i> Insuricare must choose a way of selecting which clients to call: </p>
 
