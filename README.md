@@ -19,7 +19,7 @@
 ```
 
 <p align="justify"> 
-Airbnb is an online marketplace for short-term homestays, and their business model consists of charging a comission from each booking. So they can better understand their customers behaviors and most desired booking locations a Data Scientist was hired, in order to <b> predict the five most likely countries for a USA user to make their next booking</b>. Airbnb provided data from over 200 thousand users, split in two different datasets (more information in <a href="https://github.com/brunodifranco/project-airbnb-classification#2-data-overview">Section 2</a>), so the predictions could be made for over 60 thousand users. There are 12 possible outcomes of the destination country: 'USA', 'France', 'Canada', 'Great Britain', 'Spain', 'Italy', 'Portugal', 'New Zealand', 'Germany' and 'Australia', as well as 'NDF' (which means there wasn't a booking) and 'other countries'. </p>
+Airbnb is an online marketplace for short-term homestays, and their business model consists of charging a comission from each booking. So they can better understand their customers behaviors and most desired booking locations a Data Scientist was hired, in order to <b> predict the five most likely countries for a USA user to make their next booking</b>. Airbnb provided data from over 200 thousand users, split in two different datasets (more information in <a href="https://github.com/brunodifranco/project-airbnb-classification#2-data-overview">Section 2</a>), so the predictions could be made for around 61 thousand users. There are 12 possible outcomes of the destination country: 'USA', 'France', 'Canada', 'Great Britain', 'Spain', 'Italy', 'Portugal', 'New Zealand', 'Germany' and 'Australia', as well as 'NDF' (which means there wasn't a booking) and 'other countries'. </p>
 
 # 2. **Data Overview**
 
@@ -106,14 +106,14 @@ The data was split in users and sessions data, which is the internet browsing in
 
 - <b> Feature Selection</b>: Selecting the best features to use in the ML model by using <a href="https://towardsdatascience.com/feature-selection-using-random-forest-26d7b747597f"> Random Forest</a>. 
 
-# PAREI AQUI
+- <p align="justify"> <b> Machine Learning Modeling and Model Evaluation</b>: Training Classification Algorithms. The best model was selected to be improved via Bayesian Optimization with Optuna. More information in <a href="https://github.com/brunodifranco/project-airbnb-classification#6-machine-learning-models">Section 6</a>.</p>
 
 
-- <p align="justify"> <b> Machine Learning Modeling and Model Evaluation</b>: Training Classification Algorithms with cross-validation. The best model was selected to be improved via Bayesian Optimization with Optuna. More information in <a href="https://github.com/brunodifranco/project-insuricare-ranking#6-machine-learning-models">Section 6</a>. </p>
+```diff
+! Revision - Elaborar melhor Model Deployment and Result
+```
 
-- <p align="justify"> <b> Model Deployment and Results</b>: Evaluating the model using two metrics: Precision at K and Recall at K, as well as two curves: Cumulative Gains and Lift Curves. </p>
-
-- <p align="justify"> <b> Propensity Score List and Model Deployment </b>: Providing a full list of the 76 thousand customers sorted by propensity score, as well as a Google Sheets that returns propensity score and ranks customers (used for future customers). This is the project's <b>Data Science Product</b>, and it can be accessed from anywhere. More information in <a href="https://github.com/brunodifranco/project-insuricare-ranking#7-business-and-financial-results"> Section 7</a>. </p>
+- <p align="justify"> <b> Model Deployment and Results </b>: Providing a list of the five most likely destinations predictions for 61 thousand USA Airbnb users, as well as graphical analysis of the predictions by age, gender and overall Analysis. This is the project's <b>Data Science Product</b>, and it can be accessed from anywhere in a Streamlit App. In addition to that, if new data from new users comes in it's easy to get new predictions, as a Flask application using Render Cloud was built. More information in <a href="https://github.com/brunodifranco/project-airbnb-classification#7-model-deployment-and-results"> Section 7</a>.</p>
   
 ## 4.2. Tools and techniques used:
 
@@ -215,6 +215,43 @@ The initial cross validation performance for all seven algorithms are displayed 
 <p align="justify"> NDCG at K <i>“measures the performance of a recommendation system based on the graded relevance of the recommended entities. It varies from 0.0 to 1.0, with 1.0 representing the ideal ranking of the entities.”</i> Therefore, for this instance (where k equals 5), <b>it not only measures how well we can predict the five most likely next booking locations for each user, but also how well can rank them from the most likely to the least</b>.</p>
 
 # 7. **Model Deployment and Results**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <p align="justify"> The full list sorted by propensity score is available for download <a href="https://github.com/brunodifranco/project-insuricare-ranking/blob/main/insuricare_list.xlsx">here</a>. However, for other new future customers it was necessary to deploy the model. In this project Google Sheets and Render Cloud were chosen for that matter. The idea behind this is to facilitate the predictions access for any new given data, as those can be checked from anywhere and from any electronic device, as long as internet connection is available. The spreadsheet will return you the sorted propensity score for each client in the requested dataset, all you have to do is click on the "Propensity Score" button, then on "Get Prediction".
 
