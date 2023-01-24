@@ -5,7 +5,7 @@
 <p align="center">A Classification Project</p>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/214205680-dccc15c4-ec86-439c-b50a-b96593c4416b.png" alt="drawing" width="450"/>
+  <img src="https://user-images.githubusercontent.com/66283452/214205680-dccc15c4-ec86-439c-b50a-b96593c4416b.png" width="450"/>
 </p>
 
 *Obs: The business problem is fictitious, although both company and data are real.*
@@ -19,7 +19,7 @@
 ```
 
 <p align="justify"> 
-Airbnb is an online marketplace for short-term homestays, and their business model consists of charging a comission from each booking. So they can better understand their customers behaviors and most desired booking locations a Data Scientist was hired, in order to predict the five most likely countries for a USA user to make their next booking. Airbnb provided data from over 200 thousand users, split in two different datasets (more information in <a href="https://github.com/brunodifranco/project-airbnb-classification#2-data-overview">Section 2</a>), so the predictions could be made for over 60 thousand users. There are 12 possible outcomes of the destination country: 'USA', 'France', 'Canada', 'Great Britain', 'Spain', 'Italy', 'Portugal', 'New Zealand', 'Germany' and 'Australia', as well as 'NDF' (which means there wasn't a booking) and 'other countries'. </p>
+Airbnb is an online marketplace for short-term homestays, and their business model consists of charging a comission from each booking. So they can better understand their customers behaviors and most desired booking locations a Data Scientist was hired, in order to <b> predict the five most likely countries for a USA user to make their next booking</b>. Airbnb provided data from over 200 thousand users, split in two different datasets (more information in <a href="https://github.com/brunodifranco/project-airbnb-classification#2-data-overview">Section 2</a>), so the predictions could be made for over 60 thousand users. There are 12 possible outcomes of the destination country: 'USA', 'France', 'Canada', 'Great Britain', 'Spain', 'Italy', 'Portugal', 'New Zealand', 'Germany' and 'Australia', as well as 'NDF' (which means there wasn't a booking) and 'other countries'. </p>
 
 # 2. **Data Overview**
 
@@ -127,69 +127,85 @@ The data was split in users and sessions data, which is the internet browsing in
 
 # 5. **Top Business Insights**
 
- - ### 1st - Older customers are more likely to buy the new vehicle insurance.
+```diff
++ Final Revision Only
+```
+
+ - ### 1st - Users take less than 2 days, on average, from first active in the platform to creating an account, considering all destinations.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/214314354-f0e9bafe-c2d3-45d2-8256-efa52195b502.png" alt="drawing" width="800"/>
+  <img src="https://user-images.githubusercontent.com/66283452/214318780-33ad6f3a-3054-4c4b-90c3-c7db9d9edd85.png" alt="drawing" width="850"/>
 </p>
 
 --- 
 
-- ### 2nd - Customers with older vehicles are more likely to buy vehicle insurance.
+- ### 2nd - The number of accounts created goes up during the spring.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/214309916-59f71f96-06f3-4e3d-aeef-68e7c583e20f.png" alt="drawing" width="800"/>
+  <img src="https://user-images.githubusercontent.com/66283452/214318784-96eb4214-86dc-4b9e-a449-412b980a1630.png" alt="drawing" width="850"/>
 </p>
 
 --- 
 
-- ### 3rd - Men are more likely to buy the new vehicle insurance than women.
+- ### 3rd - Women made over 15% more bookings for countries other than USA, in comparison to men.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/214309920-588b9bd1-d238-47f5-bc49-ffd112dd83f6.png" alt="drawing" width="800"/>
+  <img src="https://user-images.githubusercontent.com/66283452/214318787-7ea79725-8b3c-4909-b9dd-722b4d74b44e.png" alt="drawing" width="850"/>
 </p>
 
 ---
 
 # 6. **Machine Learning Models**
 
-<p align="justify"> This was the most fundamental part of this project, since it's in ML modeling where we can provide an ordered list of these new customers, based on their propensity score of buying the new insurance. Seven models were trained using cross-validation: </p>
+<p align="justify"> Seven models were trained using cross-validation, so we can provide predictions on the five most likely countries for an US Airbnb user to book their next destinations: </p>
 
-- KNN Classifier
 - Logistic Regression
+- Decision Tree Classifier
 - Random Forest Classifier
+- ExtraTrees Classifier
 - AdaBoost Classifier
-- CatBoost Classifier
 - XGBoost Classifier 
 - Light GBM Classifier
 
-The initial performance for all seven algorithms are displayed below:
+The initial cross validation performance for all seven algorithms are displayed below:
 
 <div align="center">
 
-|         **Model**        | **Precision at K** | **Recall at K** |
-|:------------------------:|:------------------:|:---------------:|
-|    LGBM Classifier       | 0.2789 +/- 0.0003  |0.9329 +/- 0.001 |
-|    AdaBoost Classifier   | 0.2783 +/- 0.0007	|0.9309 +/- 0.0023|
-|      CatBoost Classifier | 0.2783 +/- 0.0005	|0.9311 +/- 0.0018| 
-|   XGBoost Classifier     | 0.2771 +/- 0.0006  |0.9270 +/- 0.0022|
-|    Logistic Regression   | 0.2748 +/- 0.0009  |0.9193 +/- 0.0031|
-| Random Forest Classifier | 0.2719 +/- 0.0005  |0.9096 +/- 0.0016|
-|      KNN Classifier      | 0.2392 +/- 0.0006  |0.8001 +/- 0.0019|
+|         **Model**        | **NDCG at K** |
+|:------------------------:|:------------------:|
+|    LGBM Classifier       | 0.2789 +/- 0.0003  |
+|    AdaBoost Classifier   | 0.2783 +/- 0.0007	|
+|      CatBoost Classifier | 0.2783 +/- 0.0005	|
+|   XGBoost Classifier     | 0.2771 +/- 0.0006  |
+|    Logistic Regression   | 0.2748 +/- 0.0009  |
+| Random Forest Classifier | 0.2719 +/- 0.0005  |
+|      KNN Classifier      | 0.2392 +/- 0.0006  |
 </div>
 
-<i>K is either equal to 20,000 or 40,000, given our business problem. </i>
+<i>K is either equal to 5, given our business problem. </i>
 
-<p align="justify"> The <b>Light GBM Classifier</b> model will be chosen for hyperparameter tuning, since it's by far the fastest algorithm to train and tune, whilst being the one with best results without any tuning. </p>
+<p align="justify"> The <b>Light GBM Classifier</b> model was chosen for hyperparameter tuning, since it's fast to train and tune, whilst being the one with the best results without any tuning. In addition to that, it's much better for deployment, as it's much lighter than a XGBoost or Random Forest for instance, especially given the fact that we're using a free deployment cloud. More information in Section XXXXXXXXXXXXXXXXXX.</p>
 
-LGBM speed in comparison to other ensemble algorithms trained in this dataset:
-- 4.7 times faster than CatBoost 
-- 7.1 times faster than XGBoost
-- 30.6 times faster than AdaBoost
-- 63.2 times faster than Random Forest
+<p align="justify"> Instead of using cross-validation, which uses only the training dataset, we tuned the model by comparing its performance on the test dataset, which was split before Data Preprocessing, to avoid Data Leakage. After tuning LGBM's hyperparameters using [Bayesian Optimization with Optuna](https://optuna.readthedocs.io/en/stable/index.html) the model performance has improved:</p>
 
-<p align="justify"> At first glance the models performances don't look so great, and that's due to the short amount of variables, on which many are categorical or binary, or simply those don't contain much information. 
+ARRUMAR OS LINKS
 
-However, <b>for this business problem</b> this isn't a major concern, since the goal here isn't finding the best possible prediction on whether a customer will buy the new insurance or not, but to <b>create a score that ranks clients in a ordered list, so that the sales team can contact them in order to sell the new vehicle insurance</b>.</p>
+ <a href="https://github.com/brunodifranco/project-insuricare-ranking#7-business-and-financial-results"> Section 7</a>
 
-After tuning LGBM's hyperparameters using [Bayesian Optimization with Optuna](https://optuna.readthedocs.io/en/stable/index.html) the model performance has improved on the Precision at K, and decreased on Recall at K, which was expected: 
+<table>
+<tr><th>Before Tuning </th><th>Final Model</th></tr>
+<tr><td>
+
+|         **Model**        | **NDCG at K** |
+|--|--|
+|LGBM Classifier | 0.2793 +/- 0.0005|
+
+</td><td>
+ 
+|         **Model**        | **NDCG at K** |
+|--|--|
+|LGBM Classifier | 0.2793 +/- 0.0005|
+
+</td></tr> </table>
+
+
 
 <div align="center">
 
