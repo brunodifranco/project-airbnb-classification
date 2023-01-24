@@ -129,7 +129,7 @@ The data was split in users and sessions data, which is the internet browsing in
 
  - ### 1st - Older customers are more likely to buy the new vehicle insurance.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/214309908-8f661ab3-309d-4f17-946d-bbd6aba858de.png" alt="drawing" width="800"/>
+  <img src="https://user-images.githubusercontent.com/66283452/214314354-f0e9bafe-c2d3-45d2-8256-efa52195b502.png" alt="drawing" width="800"/>
 </p>
 
 --- 
