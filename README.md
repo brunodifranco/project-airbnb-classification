@@ -129,20 +129,21 @@ The data was split in users and sessions data, which is the internet browsing in
 
  - ### 1st - Older customers are more likely to buy the new vehicle insurance.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/198151697-f82a4e61-cbed-4465-849c-2cf81fd4762c.png" alt="drawing" width="800"/>
+  <img src="https://user-images.githubusercontent.com/66283452/214309908-8f661ab3-309d-4f17-946d-bbd6aba858de.png" alt="drawing" width="800"/>
 </p>
 
 --- 
+
 - ### 2nd - Customers with older vehicles are more likely to buy vehicle insurance.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/198151788-1018458c-8e67-4ead-9d15-76622b4df287.png" alt="drawing" width="800"/>
+  <img src="https://user-images.githubusercontent.com/66283452/214309916-59f71f96-06f3-4e3d-aeef-68e7c583e20f.png" alt="drawing" width="800"/>
 </p>
 
 --- 
 
 - ### 3rd - Men are more likely to buy the new vehicle insurance than women.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/198151862-4de5cab2-1647-4aae-bc9a-b0772e91ef18.png" alt="drawing" width="800"/>
+  <img src="https://user-images.githubusercontent.com/66283452/214309920-588b9bd1-d238-47f5-bc49-ffd112dd83f6.png" alt="drawing" width="800"/>
 </p>
 
 ---
