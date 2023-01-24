@@ -14,10 +14,19 @@
 
 # 1. **Airbnb and Business Problem**
 
+```diff
++ Final Revision Only
+```
+
 <p align="justify"> 
 Airbnb is an online marketplace for short-term homestays, and their business model consists of charging a comission from each booking. So they can better understand their customers behaviors and most desired booking locations a Data Scientist was hired, in order to predict the five most likely countries for a USA user to make their next booking. Airbnb provided data from over 200 thousand users, split in two different datasets (more information in <a href="https://github.com/brunodifranco/project-airbnb-classification#2-data-overview">Section 2</a>), so the predictions could be made for over 60 thousand users. There are 12 possible outcomes of the destination country: 'USA', 'France', 'Canada', 'Great Britain', 'Spain', 'Italy', 'Portugal', 'New Zealand', 'Germany' and 'Australia', as well as 'NDF' (which means there wasn't a booking) and 'other countries'. </p>
 
 # 2. **Data Overview**
+
+```diff
+! Revision
+```
+
 The data was split in users and sessions data, which is the internet browsing information. The Initial features descriptions are available below:
 
 <div align="center">
@@ -64,12 +73,19 @@ The data was split in users and sessions data, which is the internet browsing in
 
 # 3. **Business Assumptions and Definitions**
 
+```diff
+- To do
+```
+
 - Cross-selling is a strategy used to sell products associated with another product already owned by the customer. In this project, health insurance and vehicle insurance are the products. 
 - Learning to rank is a machine learning application. In this project, we are ranking customers in a list, from the most likely customer to buy the new insurance to the least likely one. This list will be provided by the ML model.
 
 # 4. **Solution Plan**
-## 4.1. How was the problem solved?
 
+## 4.1. How was the problem solved?
+```diff
+- To do
+```
 <p align="justify"> To provide an ordered list of these new customers, based on their propensity score of buying the new insurance the following steps were performed: </p>
 
 - <b> Understanding the Business Problem</b>: Understanding the main objective Insuricare was trying to achieve and plan the solution to it. 
@@ -86,25 +102,28 @@ The data was split in users and sessions data, which is the internet browsing in
 
 - <b> Feature Selection</b>: Selecting the best features to use in the ML model by using <a href="https://towardsdatascience.com/feature-selection-using-random-forest-26d7b747597f"> Random Forest</a>. 
 
-- <p align="justify"> <b> Machine Learning Modeling</b>: Training Classification Algorithms with cross-validation. The best model was selected to be improved via Bayesian Optimization with Optuna. More information in <a href="https://github.com/brunodifranco/project-insuricare-ranking#6-machine-learning-models">Section 6</a>. </p>
+- <p align="justify"> <b> Machine Learning Modeling and Model Evaluation</b>: Training Classification Algorithms with cross-validation. The best model was selected to be improved via Bayesian Optimization with Optuna. More information in <a href="https://github.com/brunodifranco/project-insuricare-ranking#6-machine-learning-models">Section 6</a>. </p>
 
-- <b> Model Evaluation</b>: Evaluating the model using two metrics: Precision at K and Recall at K, as well as two curves: Cumulative Gains and Lift Curves. 
-
-- <b> Results</b>: Translating the ML model to financial and business performance.
+- <p align="justify"> <b> Model Deployment and Results</b>: Evaluating the model using two metrics: Precision at K and Recall at K, as well as two curves: Cumulative Gains and Lift Curves. </p>
 
 - <p align="justify"> <b> Propensity Score List and Model Deployment </b>: Providing a full list of the 76 thousand customers sorted by propensity score, as well as a Google Sheets that returns propensity score and ranks customers (used for future customers). This is the project's <b>Data Science Product</b>, and it can be accessed from anywhere. More information in <a href="https://github.com/brunodifranco/project-insuricare-ranking#7-business-and-financial-results"> Section 7</a>. </p>
   
 ## 4.2. Tools and techniques used:
-- [Python 3.10.8](https://www.python.org/downloads/release/python-3108/), [Pandas](https://pandas.pydata.org/), [Matplotlib](https://matplotlib.org/), [Seaborn](https://seaborn.pydata.org/) and [Sklearn](https://scikit-learn.org/stable/).
+
+```diff
++ Final Revision Only
+```
+
+- [Python 3.10.9](https://www.python.org/downloads/release/python-3109/), [Pandas](https://pandas.pydata.org/), [Matplotlib](https://matplotlib.org/), [Seaborn](https://seaborn.pydata.org/) and [Sklearn](https://scikit-learn.org/stable/).
 - [SQL](https://www.w3schools.com/sql/) and [PostgresSQL](https://www.postgresql.org/).
 - [Jupyter Notebook](https://jupyter.org/) and [VSCode](https://code.visualstudio.com/).
 - [Flask](https://flask.palletsprojects.com/en/2.2.x/) and [Python API's](https://realpython.com/api-integration-in-python/).  
-- [Render Cloud](https://render.com/), [Google Sheets](https://www.google.com/sheets/about/) and [JavaScript](https://www.javascript.com/).
+- [Streamlit](https://streamlit.io/) and [Render Cloud](https://render.com/)
 - [Git](https://git-scm.com/) and [Github](https://github.com/).
 - [Exploratory Data Analysis (EDA)](https://towardsdatascience.com/exploratory-data-analysis-8fc1cb20fd15). 
 - [Techniques for Feature Selection](https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/).
-- [Classification Algorithms (KNN Classifier, Logistic Regression; Random Forest, AdaBoost, CatBoost, XGBoost and LGBM Classifiers)](https://scikit-learn.org/stable/modules/ensemble.html).
-- [Cross-Validation Methods](https://scikit-learn.org/stable/modules/cross_validation.html), [Bayesian Optimization with Optuna](https://optuna.readthedocs.io/en/stable/index.html) and [Learning to Rank Performance Metrics (Precision at K, Recall at K, Cumulative Gains Curve and Lift Curve)](https://medium.com/@m_n_malaeb/recall-and-precision-at-k-for-recommender-systems-618483226c54).
+- [Classification Algorithms (Logistic Regression, Decision Tree, Random Forest, ExtraTrees, AdaBoost, XGBoost and LGBM Classifiers)](https://scikit-learn.org/stable/modules/ensemble.html).
+- [Cross-Validation Methods](https://scikit-learn.org/stable/modules/cross_validation.html), [Bayesian Optimization with Optuna](https://optuna.readthedocs.io/en/stable/index.html) and [Performance Metrics - NDCG at rank K](https://www.kaggle.com/competitions/airbnb-recruiting-new-user-bookings/overview/evaluation).
 
 # 5. **Top Business Insights**
 
