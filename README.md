@@ -92,9 +92,9 @@ The data was split in users and sessions data, which is the internet browsing in
 
 - <b> Collecting Data</b>: Collecting data from Kaggle.
 
-- <b> Data Cleaning</b>: Checking data types and Nan's. Other tasks such as: renaming columns, dealing with outliers, fixing missing values, changing data types, etc.
+- <p align="justify"> <b> Data Cleaning</b>: Checking data types and Nan's. Other tasks such as: renaming columns, dealing with outliers, fixing missing values, changing data types, etc.</p>
 
-- <b> Feature Engineering</b>: Creating new features from the original ones, so that those could be used in the ML model. 
+- <p align="justify"> <b> Feature Engineering</b>: Creating new features from the original ones, so that those could be used in the ML model. The full new features created with their definitions are available <a href="https://github.com/brunodifranco/project-airbnb-classification/blob/main/new_features.md">here.</a> </p>
 
 - <p align="justify"> <b> Exploratory Data Analysis (EDA)</b>: Exploring the data in order to obtain business experience, look for data inconsistencies, useful business insights and find important features for the ML model. This process is split in Univariate, Bivariate (Checking Hypotheses) and Multivariate Analysis. The univariate analysis was done by using the <a href="https://pypi.org/project/pandas-profiling/">Pandas Profiling</a> library. The profile report is available for download <a href="https://github.com/brunodifranco/project-outleto-clustering/tree/main/pandas-profiling-reports"> here</a>. The top business insights found are available at <a href="https://github.com/brunodifranco/project-airbnb-classification#5-top-business-insights"> Section 5</a>. </p>
 
