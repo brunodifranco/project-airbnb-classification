@@ -10,7 +10,7 @@
 
 *Obs: The business problem is fictitious, although both company and data are real.*
 
-*The in-depth Python code explanation is available in [this](https://github.com/brunodifranco/project-insuricare-ranking/blob/main/insuricare.ipynb) Jupyter Notebook.*
+*The in-depth Python code explanation is available in [this](https://github.com/brunodifranco/project-airbnb-classification/blob/main/airbnb.ipynb) Jupyter Notebook.*
 
 # 1. **Airbnb and Business Problem**
 
@@ -19,7 +19,7 @@
 ```
 
 <p align="justify"> 
-Airbnb is an online marketplace for short-term homestays, and their business model consists of charging a comission from each booking. So they can better understand their customers behaviors and most desired booking locations a Data Scientist was hired, in order to <b> predict the five most likely countries for a USA user to make their next booking</b>. Airbnb provided data from over 200 thousand users, split in two different datasets (more information in <a href="https://github.com/brunodifranco/project-airbnb-classification#2-data-overview">Section 2</a>), so the predictions could be made for around 61 thousand users. There are 12 possible outcomes of the destination country: 'USA', 'France', 'Canada', 'Great Britain', 'Spain', 'Italy', 'Portugal', 'New Zealand', 'Germany' and 'Australia', as well as 'NDF' (which means there wasn't a booking) and 'other countries'. </p>
+Airbnb is an online marketplace for short-term homestays, and their business model consists of charging a commission from each booking. So they can better understand their customers behaviors and most desired booking locations a Data Scientist was hired, in order to <b> predict the five most likely countries for a USA user to make their next booking</b>. Airbnb provided data from over 200 thousand users, split in two different datasets (more information in <a href="https://github.com/brunodifranco/project-airbnb-classification#2-data-overview">Section 2</a>), so the predictions could be made for around 61 thousand users. There are 12 possible outcomes of the destination country: 'USA', 'France', 'Canada', 'Great Britain', 'Spain', 'Italy', 'Portugal', 'New Zealand', 'Germany' and 'Australia', as well as 'NDF' (which means there wasn't a booking) and 'other countries'. </p>
 
 # 2. **Data Overview**
 
@@ -27,7 +27,6 @@ Airbnb is an online marketplace for short-term homestays, and their business mod
 + Final Revision Only
 ```
 The data was split in users and sessions data, which is the internet browsing information. The Initial features descriptions are available below:
-
 
 
 <div align="center">
