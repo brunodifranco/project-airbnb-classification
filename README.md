@@ -1,6 +1,4 @@
- # WORK IN PROGRESS
-
-<h1 align="center"> Creating a Customer Ranking System for an Insurance Company</h1>
+<h1 align="center">Predicting Next Booking Destinations for Airbnb Users</h1>
 
 <p align="center">A Classification Project</p>
 
@@ -14,20 +12,12 @@
 
 # 1. **Airbnb and Business Problem**
 
-```diff
-+ Final Revision Only
-```
-
 <p align="justify"> 
 Airbnb is an online marketplace for short-term homestays, and their business model consists of charging a commission for each booking. So they can better understand their customers behaviors and most desired booking locations a Data Scientist was hired, in order to <b> predict the five most likely countries for a USA user to make their next booking</b>. Airbnb provided data from over 200 thousand users, split in two different datasets (more information in <a href="https://github.com/brunodifranco/project-airbnb-classification#2-data-overview">Section 2</a>), so the predictions could be made for around 61 thousand users. There are 12 possible outcomes of the destination country: 'USA', 'France', 'Canada', 'Great Britain', 'Spain', 'Italy', 'Portugal', 'New Zealand', 'Germany' and 'Australia', as well as 'NDF' (which means there wasn't a booking) and 'other countries'. </p>
 
 # 2. **Data Overview**
 
-```diff
-+ Final Revision Only
-```
 The data was split in users and sessions data, which is the internet browsing information. The Initial features descriptions are available below:
-
 
 <div align="center">
 <table>
@@ -72,10 +62,6 @@ The data was split in users and sessions data, which is the internet browsing in
 
 # 3. **Assumptions**
 
-```diff
-+ Final Revision Only
-```
-
 - <p align="justify"> Out of 'action', 'action_type', 'action_detail' only '<b>action_type</b>' was kept due to their high correlation and because they seem to represent similar events. The choice for '<b>action_type</b>' is due to it having only 28 unique values, unlike 'action' and 'action_detail' that have hundreds, which made encoding easier later.</p>
 - <p align="justify"> Missing values on 'first_affiliate_tracked' were replaced with 'untracked', as it would be the most logical replacement in this instance.</p>
 - <p align="justify"> Missing values on 'age' were replaced with the ages median.</p>
@@ -84,10 +70,6 @@ The data was split in users and sessions data, which is the internet browsing in
 # 4. **Solution Plan**
 
 ## 4.1. How was the problem solved?
-
-```diff
-+ Final Revision Only
-```
 
 <p align="justify"> To predict the five most likely countries for a USA user to make their next booking the following steps were performed: </p>
 
@@ -111,10 +93,6 @@ The data was split in users and sessions data, which is the internet browsing in
   
 ## 4.2. Tools and techniques used:
 
-```diff
-+ Final Revision Only
-```
-
 - [Python 3.10.9](https://www.python.org/downloads/release/python-3109/), [Pandas](https://pandas.pydata.org/), [Matplotlib](https://matplotlib.org/), [Seaborn](https://seaborn.pydata.org/) and [Sklearn](https://scikit-learn.org/stable/).
 - [SQL](https://www.w3schools.com/sql/) and [PostgresSQL](https://www.postgresql.org/).
 - [Jupyter Notebook](https://jupyter.org/) and [VSCode](https://code.visualstudio.com/).
@@ -127,10 +105,6 @@ The data was split in users and sessions data, which is the internet browsing in
 - [Cross-Validation Methods](https://scikit-learn.org/stable/modules/cross_validation.html), [Bayesian Optimization with Optuna](https://optuna.readthedocs.io/en/stable/index.html) and [Performance Metrics - NDCG at rank K](https://www.kaggle.com/competitions/airbnb-recruiting-new-user-bookings/overview/evaluation).
 
 # 5. **Top Business Insights**
-
-```diff
-+ Final Revision Only
-```
 
  - ### 1st - Users take less than 2 days, on average, from first active in the platform to creating an account, considering all destinations.
 <p align="center">
@@ -154,9 +128,6 @@ The data was split in users and sessions data, which is the internet browsing in
 ---
 
 # 6. **Machine Learning Models**
-```diff
-+ Final Revision Only
-```
 
 <p align="justify"> Initially, seven models were trained using cross-validation, so we can provide predictions on the five most likely countries for a US Airbnb user to book their next destinations: Logistic Regression, Decision Tree, Random Forest, Extra Trees, AdaBoost, XGBoost and Light GBM.</p>
 
@@ -208,9 +179,6 @@ The initial cross validation performance of all seven algorithms are displayed b
 <p align="justify"> NDCG at K <i>“measures the performance of a recommendation system based on the graded relevance of the recommended entities. It varies from 0.0 to 1.0, with 1.0 representing the ideal ranking of the entities.”</i> Therefore, for this instance (where k equals 5), <b>it not only measures how well we can predict the five most likely next booking locations for each user, but also how well can rank them from the most likely to the least</b>.</p>
 
 # 7. **Model Deployment and Results**
-```diff
-+ Final Revision Only
-```
 
 <p align="justify"> The model deployment was performed in three steps: 
  
@@ -241,17 +209,13 @@ The initial cross validation performance of all seven algorithms are displayed b
 <p align="justify"><i>Because the deployment was made in a free cloud (Render Cloud) the Flask App's functionality could be slow, in the other hand, the main deployment product, which is the Streamlit App, should work quickly.</i></p>
 
 # 8. **Conclusion**
-```diff
-+ Final Revision Only
-```
+
 In this project the main objective was accomplished:
 
  <p align="justify"> <b>We managed to provide a list of the five most likely destinations predictions for 61 thousand USA Airbnb users, as well as graphical analysis of the predictions by age, gender and overall analysis. This can all be found in a Streamlit App, for better visualization.</b> Also, a Flask application was built for when new data comes in, making it possible to get new predictions easily. In addition to that, three interesting and useful insights were found through Exploratory Data Analysis (EDA), so that those can be properly used by Airbnb. </p>
  
 # 9. **Next Steps**
-```diff
-+ Final Revision Only
-```
+
 <p align="justify"> Further on, this solution could be improved by a few strategies:
   
  - Creating even more features from the existing ones.
