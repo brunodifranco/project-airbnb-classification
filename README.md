@@ -36,8 +36,8 @@ The data was split in users and sessions data, which is the internet browsing in
  
 | **Feature**    | **Definition** |
 |----------------------|----------------|
-|       <h5>id</h5>                        | <h5>user id</h5> |
-|       <h5>date_account_created</h5>      | <h5>the date of account creation</h5> | 
+|       <h5>id</h5>                | <h5>user id</h5>  |
+|       <h5>date_account_created</h5>      | <h5>the date of account creation</h5>  | 
 |       <h5>timestamp_first_active</h5>    | <h5>timestamp of the first activity</h5> |
 |       <h5>date_first_booking</h5>        | <h5>date of first booking</h5> |
 |       <h5>gender</h5>                    | <h5>user's gender</h5> |
@@ -134,21 +134,21 @@ The data was split in users and sessions data, which is the internet browsing in
 
  - ### 1st - Users take less than 2 days, on average, from first active in the platform to creating an account, considering all destinations.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/214318780-33ad6f3a-3054-4c4b-90c3-c7db9d9edd85.png" alt="drawing" width="850"/>
+  <img src="https://user-images.githubusercontent.com/66283452/214318780-33ad6f3a-3054-4c4b-90c3-c7db9d9edd85.png" alt="drawing" width="750"/>
 </p>
 
 --- 
 
 - ### 2nd - The number of accounts created goes up during the spring.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/214318784-96eb4214-86dc-4b9e-a449-412b980a1630.png" alt="drawing" width="850"/>
+  <img src="https://user-images.githubusercontent.com/66283452/214318784-96eb4214-86dc-4b9e-a449-412b980a1630.png" alt="drawing" width="750"/>
 </p>
 
 --- 
 
 - ### 3rd - Women made over 15% more bookings for countries other than USA, in comparison to men.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/214318787-7ea79725-8b3c-4909-b9dd-722b4d74b44e.png" alt="drawing" width="850"/>
+  <img src="https://user-images.githubusercontent.com/66283452/214318787-7ea79725-8b3c-4909-b9dd-722b4d74b44e.png" alt="drawing" width="50"/>
 </p>
 
 ---
