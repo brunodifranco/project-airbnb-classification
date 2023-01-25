@@ -30,6 +30,178 @@ The data was split in users and sessions data, which is the internet browsing in
 
 <div align="center">
  
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-bn4o" colspan="2">Users </th>
+    <th class="tg-bn4o" colspan="2">Sessions</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-amwm">Feature</td>
+    <td class="tg-amwm">Definition</td>
+    <td class="tg-amwm">Feature</td>
+    <td class="tg-amwm">Definition</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">m</td>
+    <td class="tg-0lax">i</td>
+    <td class="tg-0lax">l</td>
+    <td class="tg-0lax">p</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">o</td>
+    <td class="tg-0lax">k</td>
+    <td class="tg-0lax">g</td>
+    <td class="tg-0lax">u</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+</tbody>
+</table>
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div align="center">
+<table>
+<tr><th><h3>Users</h3> </th><th><h3>Sessions</h3></th></tr>
+<tr><td>
+ 
+| **Feature**    | **Definition** |
+|----------------------|----------------|
+|       <h5>id</h5>                        | <h5>user id</h5> |
+|       <h5>date_account_created</h5>      | <h5>the date of account creation</h5> | 
+|       <h5>timestamp_first_active</h5>    | <h5>timestamp of the first activity</h5> |
+|       <h5>date_first_booking</h5>        | <h5>date of first booking</h5> |
+|       <h5>gender</h5>                    | <h5>user's gender</h5> |
+|       <h5>age</h5>                       | <h5>user's age</h5> |
+|       <h5>signup_method</h5>             | <h5>method of signing up e.g. facebook,  google</h5>|
+|       <h5>signup_flow</h5>               | <h5>the page a user came to signup up from</h5> |
+|       <h5>language</h5>                  | <h5>international language preference</h5> |
+|       <h5>affiliate_channel</h5>         | <h5>what kind of paid marketing</h5> |
+|       <h5>affiliate_provider</h5>        | <h5>where the marketing is e.g. google, craigslist</h5> |
+|       <h5>first_affiliate_tracked</h5>   | <h5>first marketing the user interacted with</h5> |
+|       <h5>signup_app</h5>                | <h5>signup app  e.g. Web, Android</h5> |
+|       <h5>first_device_type</h5>         | <h5>first device type used e.g. Windows, IPhone, Android</h5>|
+|       <h5>first_browser</h5>             | <h5>first browser used e.g. Chrome, FireFox, Safari</h5> |
+|       <h5>country_destination</h5>       | <h5>target variable</h5> |
+
+
+</td><td>
+ 
+ 
+| **Feature**          | **Definition** |
+|----------------------|----------------|
+|       <h5>user_id</h5>      | <h5>same as 'id' in users table</h5> |
+|       <h5>action</h5>       | <h5>action performed e.g. show, search_results</h5> | 
+|       <h5>action_type</h5>  | <h5>action type performed e.g. view, click</h5> |
+|       <h5>action_detail</h5>| <h5>action detail e.g. confirm_email_link</h5> |
+|       <h5>device_type</h5>  | <h5>device used on each action</h5> |
+|       <h5>secs_elapsed</h5> | <h5>the time between two actions recorded</h5> |
+
+</td></tr> </table>
+
+</div>
+
+<div align="center">
+ 
 ## Users Data:
 
 | **Feature**          | **Definition** |
@@ -40,16 +212,16 @@ The data was split in users and sessions data, which is the internet browsing in
 |       date_first_booking       | date of first booking |
 |       gender    | user's gender |
 |       age      | user's age |
-|       signup_method     | method of signing up e.g. facebook, basic, google |
+|       signup_method     | method of signing up e.g. facebook,  google |
 |       signup_flow        | the page a user came to signup up from |
 |       language        | international language preference |
 |       affiliate_channel        | what kind of paid marketing |
-|       affiliate_provider        | where the marketing is e.g. google, craigslist, other |
-|       first_affiliate_tracked        | whats the first marketing the user interacted with before the signing up |
+|       affiliate_provider        | where the marketing is e.g. google, craigslist |
+|       first_affiliate_tracked        | first marketing the user interacted with before the signing up |
 |       signup_app        | signup app  e.g. Web, Android |
-|       first_device_type        | first device type used e.g. Windows Desktop, IPhone, Android Phone|
+|       first_device_type        | first device type used e.g. Windows, IPhone, Android|
 |       first_browser        | first browser used e.g. Chrome, FireFox, Safari |
-|       country_destination        | This is the target variable |
+|       country_destination        | target variable |
 
 </div>  
 
@@ -59,10 +231,10 @@ The data was split in users and sessions data, which is the internet browsing in
  
 | **Feature**          | **Definition** |
 |----------------------|----------------|
-|       user_id      | to be joined with the column 'id' in users table |
-|       action      | action performed e.g. show, search_results, confirm_email | 
+|       user_id      | same as 'id' in users table |
+|       action      | action performed e.g. show, search_results | 
 |       action_type    | action type performed e.g. view, click |
-|       action_detail       | action detail e.g. confirm_email_link, view_search_results |
+|       action_detail       | action detail e.g. confirm_email_link |
 |       device_type    | device used on each action |
 |       secs_elapsed      | the time between two actions recorded |
   
@@ -209,7 +381,7 @@ The initial cross validation performance for all seven algorithms are displayed 
 
 # 7. **Model Deployment and Results**
 ```diff
-+ Final Revision Only - tentar aumentar a fonte dos links streamlit e flask
++ Final Revision Only
 ```
 
 <p align="justify"> The model deployment was performed in three steps: 
@@ -220,9 +392,21 @@ The initial cross validation performance for all seven algorithms are displayed 
 
  - <p align="justify"> <b>Step 3</b>: Streamlit retrieves the df_pred data from the Database and displays it in a table inside Streamlit with filters, where you can find the five most likely destinations predictions for the 61 thousand USA Airbnb users. In addition to that, graphical analysis from the predictions were built, split by age, gender and overall analysis. This is the project's <b>Data Science Product</b>, and it can be accessed from anywhere in a Streamlit App.</p>
 
-<b>Click here to access the Streamlit App:</b> [![Streamlit App](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://airbnb.streamlit.app/)
 
-<b> And here to access the Flask App:</b> [![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)](https://airbnb-predict.onrender.com)
+<div align="center">
+<table>
+<tr><th>Click on the respective icon to access the link</th></tr>
+<tr><td>
+ 
+ <div align="center">
+
+|         **Streamlit App**        | **Flask App** |
+|:------------------------:|:-------------:|
+|        [![Streamlit App](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://airbnb.streamlit.app/)       |     [![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)](https://airbnb-predict.onrender.com)  | 
+</div>
+ 
+ </td></tr> </table>
+</div>
 
 <p align="justify"> The Flask App is particularly useful for when new data comes in, as we can get new predictions with a click of a button, so it can be later retrieved by the Streamlit App. The Streamlit App code is available <a href="https://github.com/brunodifranco/airbnb-app">here</a> and the Flask App code can be seen <a href="https://github.com/brunodifranco/airbnb-predict">here</a>.</p>
 
