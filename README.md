@@ -73,14 +73,13 @@ The data was split in users and sessions data, which is the internet browsing in
 # 3. **Assumptions**
 
 ```diff
-- To do
++ Final Revision Only
 ```
 
-- Out of action, action_type, action_detail only **action_type** was kept due to their high correlation and because they seem to represent similar events. **action_type** was chosen because it has only 28 unique values, unlike action and action_detail that have hundreds, which made encoding easier later.
-- NaN's on 'first_affiliate_tracked' were replaced with 'untracked', as it would be the most logical replacement in this instance.
-- date_first_booking was dropped since it doesn't exist in the new users dataset.
-- NaN's on 'age' were replaced with the median of ages.
-
+- <p align="justify"> Out of 'action', 'action_type', 'action_detail' only '<b>action_type</b>' was kept due to their high correlation and because they seem to represent similar events. The choice for '<b>action_type</b>' is due to it having only 28 unique values, unlike 'action' and 'action_detail' that have hundreds, which made encoding easier later.</p>
+- <p align="justify"> Missing values on 'first_affiliate_tracked' were replaced with 'untracked', as it would be the most logical replacement in this instance.</p>
+- <p align="justify"> Missing values on 'age' were replaced with the median of ages.</p>
+- <p align="justify"> 'date_first_booking' was dropped since it doesn't exist in the new users dataset.</p>
 
 # 4. **Solution Plan**
 
