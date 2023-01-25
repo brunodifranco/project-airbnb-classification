@@ -113,7 +113,7 @@ The data was split in users and sessions data, which is the internet browsing in
 ! Revision - Elaborar melhor Model Deployment and Result
 ```
 
-- <p align="justify"> <b> Model Deployment and Results </b>: Providing a list of the five most likely destinations predictions for 61 thousand USA Airbnb users, as well as graphical analysis of the predictions by age, gender and overall Analysis. This is the project's <b>Data Science Product</b>, and it can be accessed from anywhere in a Streamlit App. In addition to that, if new data from new users comes in it's easy to get new predictions, as a Flask application using Render Cloud was built. More information in <a href="https://github.com/brunodifranco/project-airbnb-classification#7-model-deployment-and-results"> Section 7</a>.</p>
+- <p align="justify"> <b> Model Deployment and Results </b>: Providing a list of the five most likely destinations predictions for 61 thousand USA Airbnb users, as well as graphical analysis of the predictions by age, gender and overall analysis. This is the project's <b>Data Science Product</b>, and it can be accessed from anywhere in a Streamlit App. In addition to that, if new data from new users comes in it's easy to get new predictions, as a Flask application using Render Cloud was built. More information in <a href="https://github.com/brunodifranco/project-airbnb-classification#7-model-deployment-and-results"> Section 7</a>.</p>
   
 ## 4.2. Tools and techniques used:
 
@@ -231,24 +231,22 @@ The initial cross validation performance for all seven algorithms are displayed 
 
 <b> And here to access the Flask App:</b> [![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)](https://airbnb-predict.onrender.com)
 
-<p align="justify"> The Flask App is particularly useful for when new data comes in, as we can get new predictions with a click of a button, so it can be later retrieved by the Streamlit App. </p>
+<p align="justify"> The Flask App is particularly useful for when new data comes in, as we can get new predictions with a click of a button, so it can be later retrieved by the Streamlit App. The Streamlit App code is available <a href="https://github.com/brunodifranco/airbnb-app">here</a> and the Flask App code can be seen <a href="https://github.com/brunodifranco/airbnb-predict">here</a>.</p>
 
 <p align="justify"><i>Because the deployment was made in a free cloud (Render Cloud) the Flask App's functionality could be slow, in the other hand, the main deployment product, which is the Streamlit App, should work quickly.</i></p>
 
 # 8. **Conclusion**
 In this project the main objective was accomplished:
 
- <p align="justify"> <b> We managed to provide a list of new customers ordered by their buy propensity score and a spreadsheet that returns the buy propensity score for other new future customers. Now, the Sales Team can focus their attention on the 20,000 or 40,000 first customers on the list, and in the future focus on the top K customers of the new list. </b> In addition to that, five interesting and useful insights were found through Exploratory Data Analysis (EDA), so that those can be properly used by Insuricare, as well as Expected Financial Results. </p>
+ <p align="justify"> <b> We managed to provide a list of the five most likely destinations predictions for 61 thousand USA Airbnb users, as well as graphical analysis of the predictions by age, gender and overall analysis. This can all be found in a Streamlit App, for better visualization. Also, a Flask application was built for when new data comes in, making it possible to get new predictions easily. In addition to that, three interesting and useful insights were found through Exploratory Data Analysis (EDA), so that those can be properly used by Airbnb. </p>
  
 # 9. **Next Steps**
 <p align="justify"> Further on, this solution could be improved by a few strategies:
   
- - Conducting more market researches, so that more useful information on customers could be collected, since there was a lack of meaningful variables.
-  
- - Applying <a href="https://builtin.com/data-science/step-step-explanation-principal-component-analysis">Principal Component Analysis (PCA) </a> in the dataset.
-  
- - Try other classification algorithms that could better capture the phenomenon.
-
+ - Creating even more features from the existent ones.
+ - Try other classification algorithms, such as Neural Networks.
+ - Using a paid Cloud, such as AWS.
+ 
 # Contact
 
 - brunodifranco99@gmail.com
