@@ -24,9 +24,8 @@ Airbnb is an online marketplace for short-term homestays, and their business mod
 # 2. **Data Overview**
 
 ```diff
-! Revision
+! Revision - melhorar a distribuição das tabelas
 ```
-
 The data was split in users and sessions data, which is the internet browsing information. The Initial features descriptions are available below:
 
 <div align="center">
@@ -71,21 +70,26 @@ The data was split in users and sessions data, which is the internet browsing in
   
 <i>The data was collected from Kaggle.</i>
 
-# 3. **Business Assumptions and Definitions**
+# 3. **Assumptions**
 
 ```diff
 - To do
 ```
 
-- Cross-selling is a strategy used to sell products associated with another product already owned by the customer. In this project, health insurance and vehicle insurance are the products. 
-- Learning to rank is a machine learning application. In this project, we are ranking customers in a list, from the most likely customer to buy the new insurance to the least likely one. This list will be provided by the ML model.
+- Out of action, action_type, action_detail only **action_type** was kept due to their high correlation and because they seem to represent similar events. **action_type** was chosen because it has only 28 unique values, unlike action and action_detail that have hundreds, which made encoding easier later.
+- NaN's on 'first_affiliate_tracked' were replaced with 'untracked', as it would be the most logical replacement in this instance.
+- date_first_booking was dropped since it doesn't exist in the new users dataset.
+- NaN's on 'age' were replaced with the median of ages.
+
 
 # 4. **Solution Plan**
 
 ## 4.1. How was the problem solved?
+
 ```diff
-- To do
+! Revision - Elaborar melhor Model Deployment and Result
 ```
+
 <p align="justify"> To predict the five most likely countries for a USA user to make their next booking the following steps were performed: </p>
 
 - <b> Understanding the Business Problem</b>: Understanding the main objective we are trying to achieve and plan the solution to it. 
@@ -96,11 +100,7 @@ The data was split in users and sessions data, which is the internet browsing in
 
 - <p align="justify"> <b> Feature Engineering</b>: Creating new features from the original ones, so that those could be used in the ML model. The full new features created with their definitions are available <a href="https://github.com/brunodifranco/project-airbnb-classification/blob/main/new_features.md">here.</a> </p>
 
-- <p align="justify"> <b> Exploratory Data Analysis (EDA)</b>: Exploring the data in order to obtain business experience, look for data inconsistencies, useful business insights and find important features for the ML model. This process is split in Univariate, Bivariate (Checking Hypotheses) and Multivariate Analysis. The univariate analysis was done by using the <a href="https://pypi.org/project/pandas-profiling/">Pandas Profiling</a> library. The profile report is available for download <a href="https://github.com/brunodifranco/project-outleto-clustering/tree/main/pandas-profiling-reports"> here</a>. The top business insights found are available at <a href="https://github.com/brunodifranco/project-airbnb-classification#5-top-business-insights"> Section 5</a>. </p>
-
-```diff
-- link do profile report
-```
+- <p align="justify"> <b> Exploratory Data Analysis (EDA)</b>: Exploring the data in order to obtain business experience, look for data inconsistencies, useful business insights and find important features for the ML model. This process is split in Univariate, Bivariate (Checking Hypotheses) and Multivariate Analysis. The univariate analysis was done by using the <a href="https://pypi.org/project/pandas-profiling/">Pandas Profiling</a> library. The report is available for download <a href="https://github.com/brunodifranco/project-airbnb-classification/blob/main/report.html"> here</a>. The top business insights found are available at <a href="https://github.com/brunodifranco/project-airbnb-classification#5-top-business-insights"> Section 5</a>. </p>
 
 - <b> Data Preparation</b>: Applying <a href="https://www.atoti.io/articles/when-to-perform-a-feature-scaling/"> Rescaling Techniques</a> in the data, as well as <a href="https://www.geeksforgeeks.org/feature-encoding-techniques-machine-learning/">Enconding Methods</a>, to deal with categorical variables. 
 
@@ -181,11 +181,7 @@ The initial cross validation performance for all seven algorithms are displayed 
 
 <i>Where K is equal to 5, given our business problem</i>.
 
-<p align="justify"> The <b>Light GBM</b> was chosen as a final model, since it's fast to train and tune, whilst being also the one with the best result without any tuning. In addition to that, it's much better for deployment, as it's much lighter than a XGBoost or Random Forest for instance, especially given the fact that we're using a free deployment cloud. More information in Section XXXXXXXXXXXXXXXXXX.</p>
-
-```diff
-! Revision - Section XXXXXXXXXXXXXXXXXX
-```
+<p align="justify"> The <b>Light GBM</b> was chosen as a final model, since it's fast to train and tune, whilst being also the one with the best result without any tuning. In addition to that, it's much better for deployment, as it's much lighter than a XGBoost or Random Forest for instance, especially given the fact that we're using a free deployment cloud. More information in <a href="https://github.com/brunodifranco/project-airbnb-classification#7-model-deployment-and-results"> Section 7</a>.</p>
 
 <p align="justify"> Instead of using cross-validation, which uses only the training dataset, we tuned the model's hyperparameters by comparing its performance on the test dataset, which was split before Data Preparation, to avoid <a href="https://towardsdatascience.com/data-leakage-in-machine-learning-how-it-can-be-detected-and-minimize-the-risk-8ef4e3a97562">Data Leakage</a>. After tuning LGBM's hyperparameters using <a href="https://optuna.readthedocs.io/en/stable/index.html">Bayesian Optimization with Optuna</a> the model performance has improved, as expected:</p>
 
@@ -238,7 +234,7 @@ The initial cross validation performance for all seven algorithms are displayed 
 # 8. **Conclusion**
 In this project the main objective was accomplished:
 
- <p align="justify"> <b> We managed to provide a list of the five most likely destinations predictions for 61 thousand USA Airbnb users, as well as graphical analysis of the predictions by age, gender and overall analysis. This can all be found in a Streamlit App, for better visualization. Also, a Flask application was built for when new data comes in, making it possible to get new predictions easily. In addition to that, three interesting and useful insights were found through Exploratory Data Analysis (EDA), so that those can be properly used by Airbnb. </p>
+ <p align="justify"> <b>We managed to provide a list of the five most likely destinations predictions for 61 thousand USA Airbnb users, as well as graphical analysis of the predictions by age, gender and overall analysis. This can all be found in a Streamlit App, for better visualization.</b> Also, a Flask application was built for when new data comes in, making it possible to get new predictions easily. In addition to that, three interesting and useful insights were found through Exploratory Data Analysis (EDA), so that those can be properly used by Airbnb. </p>
  
 # 9. **Next Steps**
 <p align="justify"> Further on, this solution could be improved by a few strategies:
