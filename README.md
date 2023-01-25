@@ -24,138 +24,9 @@ Airbnb is an online marketplace for short-term homestays, and their business mod
 # 2. **Data Overview**
 
 ```diff
-! Revision - melhorar a distribuição das tabelas
++ Final Revision Only
 ```
 The data was split in users and sessions data, which is the internet browsing information. The Initial features descriptions are available below:
-
-<div align="center">
- 
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-bn4o" colspan="2">Users </th>
-    <th class="tg-bn4o" colspan="2">Sessions</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-amwm">Feature</td>
-    <td class="tg-amwm">Definition</td>
-    <td class="tg-amwm">Feature</td>
-    <td class="tg-amwm">Definition</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">m</td>
-    <td class="tg-0lax">i</td>
-    <td class="tg-0lax">l</td>
-    <td class="tg-0lax">p</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax">o</td>
-    <td class="tg-0lax">k</td>
-    <td class="tg-0lax">g</td>
-    <td class="tg-0lax">u</td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-0lax"></td>
-  </tr>
-</tbody>
-</table>
-
- </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -183,10 +54,8 @@ The data was split in users and sessions data, which is the internet browsing in
 |       <h5>first_browser</h5>             | <h5>first browser used e.g. Chrome, FireFox, Safari</h5> |
 |       <h5>country_destination</h5>       | <h5>target variable</h5> |
 
-
 </td><td>
- 
- 
+  
 | **Feature**          | **Definition** |
 |----------------------|----------------|
 |       <h5>user_id</h5>      | <h5>same as 'id' in users table</h5> |
@@ -200,46 +69,6 @@ The data was split in users and sessions data, which is the internet browsing in
 
 </div>
 
-<div align="center">
- 
-## Users Data:
-
-| **Feature**          | **Definition** |
-|----------------------|----------------|
-|       id      | user id |
-|       date_account_created      | the date of account creation | 
-|       timestamp_first_active    | timestamp of the first activity |
-|       date_first_booking       | date of first booking |
-|       gender    | user's gender |
-|       age      | user's age |
-|       signup_method     | method of signing up e.g. facebook,  google |
-|       signup_flow        | the page a user came to signup up from |
-|       language        | international language preference |
-|       affiliate_channel        | what kind of paid marketing |
-|       affiliate_provider        | where the marketing is e.g. google, craigslist |
-|       first_affiliate_tracked        | first marketing the user interacted with before the signing up |
-|       signup_app        | signup app  e.g. Web, Android |
-|       first_device_type        | first device type used e.g. Windows, IPhone, Android|
-|       first_browser        | first browser used e.g. Chrome, FireFox, Safari |
-|       country_destination        | target variable |
-
-</div>  
-
-<div align="center">
- 
-## Sessions Data:
- 
-| **Feature**          | **Definition** |
-|----------------------|----------------|
-|       user_id      | same as 'id' in users table |
-|       action      | action performed e.g. show, search_results | 
-|       action_type    | action type performed e.g. view, click |
-|       action_detail       | action detail e.g. confirm_email_link |
-|       device_type    | device used on each action |
-|       secs_elapsed      | the time between two actions recorded |
-  
- </div>  
-  
 <i>The data was collected from Kaggle.</i>
 
 # 3. **Assumptions**
