@@ -19,7 +19,7 @@
 ```
 
 <p align="justify"> 
-Airbnb is an online marketplace for short-term homestays, and their business model consists of charging a commission from each booking. So they can better understand their customers behaviors and most desired booking locations a Data Scientist was hired, in order to <b> predict the five most likely countries for a USA user to make their next booking</b>. Airbnb provided data from over 200 thousand users, split in two different datasets (more information in <a href="https://github.com/brunodifranco/project-airbnb-classification#2-data-overview">Section 2</a>), so the predictions could be made for around 61 thousand users. There are 12 possible outcomes of the destination country: 'USA', 'France', 'Canada', 'Great Britain', 'Spain', 'Italy', 'Portugal', 'New Zealand', 'Germany' and 'Australia', as well as 'NDF' (which means there wasn't a booking) and 'other countries'. </p>
+Airbnb is an online marketplace for short-term homestays, and their business model consists of charging a commission for each booking. So they can better understand their customers behaviors and most desired booking locations a Data Scientist was hired, in order to <b> predict the five most likely countries for a USA user to make their next booking</b>. Airbnb provided data from over 200 thousand users, split in two different datasets (more information in <a href="https://github.com/brunodifranco/project-airbnb-classification#2-data-overview">Section 2</a>), so the predictions could be made for around 61 thousand users. There are 12 possible outcomes of the destination country: 'USA', 'France', 'Canada', 'Great Britain', 'Spain', 'Italy', 'Portugal', 'New Zealand', 'Germany' and 'Australia', as well as 'NDF' (which means there wasn't a booking) and 'other countries'. </p>
 
 # 2. **Data Overview**
 
@@ -78,7 +78,7 @@ The data was split in users and sessions data, which is the internet browsing in
 
 - <p align="justify"> Out of 'action', 'action_type', 'action_detail' only '<b>action_type</b>' was kept due to their high correlation and because they seem to represent similar events. The choice for '<b>action_type</b>' is due to it having only 28 unique values, unlike 'action' and 'action_detail' that have hundreds, which made encoding easier later.</p>
 - <p align="justify"> Missing values on 'first_affiliate_tracked' were replaced with 'untracked', as it would be the most logical replacement in this instance.</p>
-- <p align="justify"> Missing values on 'age' were replaced with the median of ages.</p>
+- <p align="justify"> Missing values on 'age' were replaced with the ages median.</p>
 - <p align="justify"> 'date_first_booking' was dropped since it doesn't exist in the new users dataset.</p>
 
 # 4. **Solution Plan**
@@ -99,7 +99,7 @@ The data was split in users and sessions data, which is the internet browsing in
 
 - <p align="justify"> <b> Feature Engineering</b>: Creating new features from the original ones, so that those could be used in the ML model. The full new features created with their definitions are available <a href="https://github.com/brunodifranco/project-airbnb-classification/blob/main/new_features.md">here.</a> </p>
 
-- <p align="justify"> <b> Exploratory Data Analysis (EDA)</b>: Exploring the data in order to obtain business experience, look for data inconsistencies, useful business insights and find important features for the ML model. This process is split in Univariate, Bivariate (Checking Hypotheses) and Multivariate Analysis. The univariate analysis was done by using the <a href="https://pypi.org/project/pandas-profiling/">Pandas Profiling</a> library. The report is available for download <a href="https://github.com/brunodifranco/project-airbnb-classification/blob/main/report.html"> here</a>. The top business insights found are available at <a href="https://github.com/brunodifranco/project-airbnb-classification#5-top-business-insights"> Section 5</a>. </p>
+- <p align="justify"> <b> Exploratory Data Analysis (EDA)</b>: Exploring the data in order to obtain business experience, look for data inconsistencies, useful business insights and find important features for the ML model. This process is split in Univariate, Bivariate (Checking Hypotheses) and Multivariate Analysis. The univariate analysis was done by using the <a href="https://pypi.org/project/pandas-profiling/">Pandas Profiling</a> library. The report is available for download <a href="https://github.com/brunodifranco/project-airbnb-classification/blob/main/report.html"> here</a>. The top business insights found are available in <a href="https://github.com/brunodifranco/project-airbnb-classification#5-top-business-insights"> Section 5</a>. </p>
 
 - <b> Data Preparation</b>: Applying <a href="https://www.atoti.io/articles/when-to-perform-a-feature-scaling/"> Rescaling Techniques</a> in the data, as well as <a href="https://www.geeksforgeeks.org/feature-encoding-techniques-machine-learning/">Enconding Methods</a>, to deal with categorical variables. 
 
