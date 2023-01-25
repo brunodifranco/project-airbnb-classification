@@ -96,8 +96,8 @@ The data was split in users and sessions data, which is the internet browsing in
 - [Python 3.10.9](https://www.python.org/downloads/release/python-3109/), [Pandas](https://pandas.pydata.org/), [Matplotlib](https://matplotlib.org/), [Seaborn](https://seaborn.pydata.org/) and [Sklearn](https://scikit-learn.org/stable/).
 - [SQL](https://www.w3schools.com/sql/) and [PostgresSQL](https://www.postgresql.org/).
 - [Jupyter Notebook](https://jupyter.org/) and [VSCode](https://code.visualstudio.com/).
-- [Flask](https://flask.palletsprojects.com/en/2.2.x/) and [Python API's](https://realpython.com/api-integration-in-python/).  
-- [Streamlit](https://streamlit.io/) and [Render Cloud](https://render.com/)
+- [Flask](https://flask.palletsprojects.com/en/2.2.x/) and [Render Cloud](https://render.com/).
+- [Streamlit](https://streamlit.io/).
 - [Git](https://git-scm.com/) and [Github](https://github.com/).
 - [Exploratory Data Analysis (EDA)](https://towardsdatascience.com/exploratory-data-analysis-8fc1cb20fd15). 
 - [Techniques for Feature Selection](https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/).
