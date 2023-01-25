@@ -86,7 +86,7 @@ The data was split in users and sessions data, which is the internet browsing in
 ## 4.1. How was the problem solved?
 
 ```diff
-! Revision - Elaborar melhor Model Deployment and Result
++ Final Revision Only
 ```
 
 <p align="justify"> To predict the five most likely countries for a USA user to make their next booking the following steps were performed: </p>
@@ -106,11 +106,6 @@ The data was split in users and sessions data, which is the internet browsing in
 - <b> Feature Selection</b>: Selecting the best features to use in the ML model by using <a href="https://towardsdatascience.com/feature-selection-using-random-forest-26d7b747597f"> Random Forest</a>. 
 
 - <p align="justify"> <b> Machine Learning Modeling and Model Evaluation</b>: Training Classification Algorithms. The best model was selected to be improved via Bayesian Optimization with Optuna. More information in <a href="https://github.com/brunodifranco/project-airbnb-classification#6-machine-learning-models">Section 6</a>.</p>
-
-
-```diff
-! Revision - Elaborar melhor Model Deployment and Result
-```
 
 - <p align="justify"> <b> Model Deployment and Results </b>: Providing a list of the five most likely destinations predictions for 61 thousand USA Airbnb users, as well as graphical analysis of the predictions by age, gender and overall analysis. This is the project's <b>Data Science Product</b>, and it can be accessed from anywhere in a Streamlit App. In addition to that, if new data from new users comes in it's easy to get new predictions, as a Flask application using Render Cloud was built. More information in <a href="https://github.com/brunodifranco/project-airbnb-classification#7-model-deployment-and-results"> Section 7</a>.</p>
   
@@ -159,6 +154,9 @@ The data was split in users and sessions data, which is the internet browsing in
 ---
 
 # 6. **Machine Learning Models**
+```diff
++ Final Revision Only
+```
 
 <p align="justify"> Initially, seven models were trained using cross-validation, so we can provide predictions on the five most likely countries for an US Airbnb user to book their next destinations: Logistic Regression, Decision Tree, Random Forest, Extra Trees, AdaBoost, XGBoost and Light GBM.</p>
 
@@ -231,11 +229,17 @@ The initial cross validation performance for all seven algorithms are displayed 
 <p align="justify"><i>Because the deployment was made in a free cloud (Render Cloud) the Flask App's functionality could be slow, in the other hand, the main deployment product, which is the Streamlit App, should work quickly.</i></p>
 
 # 8. **Conclusion**
+```diff
++ Final Revision Only
+```
 In this project the main objective was accomplished:
 
  <p align="justify"> <b>We managed to provide a list of the five most likely destinations predictions for 61 thousand USA Airbnb users, as well as graphical analysis of the predictions by age, gender and overall analysis. This can all be found in a Streamlit App, for better visualization.</b> Also, a Flask application was built for when new data comes in, making it possible to get new predictions easily. In addition to that, three interesting and useful insights were found through Exploratory Data Analysis (EDA), so that those can be properly used by Airbnb. </p>
  
 # 9. **Next Steps**
+```diff
++ Final Revision Only
+```
 <p align="justify"> Further on, this solution could be improved by a few strategies:
   
  - Creating even more features from the existent ones.
