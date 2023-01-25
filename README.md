@@ -107,7 +107,7 @@ The data was split in users and sessions data, which is the internet browsing in
 
 - <p align="justify"> <b> Machine Learning Modeling and Model Evaluation</b>: Training Classification Algorithms. The best model was selected to be improved via Bayesian Optimization with Optuna. More information in <a href="https://github.com/brunodifranco/project-airbnb-classification#6-machine-learning-models">Section 6</a>.</p>
 
-- <p align="justify"> <b> Model Deployment and Results </b>: Providing a list of the five most likely destinations predictions for 61 thousand USA Airbnb users, as well as graphical analysis of the predictions by age, gender and overall analysis. This is the project's <b>Data Science Product</b>, and it can be accessed from anywhere in a Streamlit App. In addition to that, if new data from new users comes in it's easy to get new predictions, as a Flask application using Render Cloud was built. More information in <a href="https://github.com/brunodifranco/project-airbnb-classification#7-model-deployment-and-results"> Section 7</a>.</p>
+- <p align="justify"> <b> Model Deployment and Results </b>: Providing a list of the five most likely destinations predictions for 61 thousand USA Airbnb users, as well as graphical analysis of the predictions by age, gender and overall analysis. This is the project's <b>Data Science Product</b>, and it can be accessed from anywhere in a Streamlit App. In addition to that, if new data from new users comes in, it's easy to get new predictions, as a Flask application using Render Cloud was built. More information in <a href="https://github.com/brunodifranco/project-airbnb-classification#7-model-deployment-and-results"> Section 7</a>.</p>
   
 ## 4.2. Tools and techniques used:
 
@@ -148,7 +148,7 @@ The data was split in users and sessions data, which is the internet browsing in
 
 - ### 3rd - Women made over 15% more bookings for countries other than USA, in comparison to men.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/214318787-7ea79725-8b3c-4909-b9dd-722b4d74b44e.png" alt="drawing" width="50"/>
+  <img src="https://user-images.githubusercontent.com/66283452/214318787-7ea79725-8b3c-4909-b9dd-722b4d74b44e.png" alt="drawing" width="750"/>
 </p>
 
 ---
@@ -158,9 +158,9 @@ The data was split in users and sessions data, which is the internet browsing in
 + Final Revision Only
 ```
 
-<p align="justify"> Initially, seven models were trained using cross-validation, so we can provide predictions on the five most likely countries for an US Airbnb user to book their next destinations: Logistic Regression, Decision Tree, Random Forest, Extra Trees, AdaBoost, XGBoost and Light GBM.</p>
+<p align="justify"> Initially, seven models were trained using cross-validation, so we can provide predictions on the five most likely countries for a US Airbnb user to book their next destinations: Logistic Regression, Decision Tree, Random Forest, Extra Trees, AdaBoost, XGBoost and Light GBM.</p>
 
-The initial cross validation performance for all seven algorithms are displayed below:
+The initial cross validation performance of all seven algorithms are displayed below:
 
 <div align="center">
 
@@ -216,9 +216,9 @@ The initial cross validation performance for all seven algorithms are displayed 
  
 - <p align="justify"> <b>Step 1</b>: The original data (both datasets in <a href="https://github.com/brunodifranco/project-airbnb-classification#2-data-overview"> Section 2</a>) was saved in a PostgreSQL Database from <a href="https://neon.tech/">Neon.tech</a>. </p>
  
- - <p align="justify"> <b>Step 2</b>: A Flask application was built using <a href="https://render.com/"> Render Cloud </a>, on which it extracts the original data from that PostgreSQL Database, cleans and transforms the data, loads the saved ML model, creates predictions for each user and adds these predictions back in a different table inside the same Database. Let's name this table 'df_pred' for the sake of the explanation.</p>
+ - <p align="justify"> <b>Step 2</b>: A Flask application was built using <a href="https://render.com/"> Render Cloud </a>, on which it extracts the original data from that PostgreSQL Database, cleans and transforms the data, loads the saved ML model, creates predictions for each user and adds these predictions back in a different table in the same Database. Let's name this table 'df_pred' for the sake of the explanation.</p>
 
- - <p align="justify"> <b>Step 3</b>: Streamlit retrieves the df_pred data from the Database and displays it in a table inside Streamlit with filters, where you can find the five most likely destinations predictions for the 61 thousand USA Airbnb users. In addition to that, graphical analysis from the predictions were built, split by age, gender and overall analysis. This is the project's <b>Data Science Product</b>, and it can be accessed from anywhere in a Streamlit App.</p>
+ - <p align="justify"> <b>Step 3</b>: Streamlit retrieves the df_pred data from the Database and displays it in a table inside Streamlit with filters, where you can find the five most likely destinations predictions for the 61 thousand USA Airbnb users. In addition to that, graphical analysis of the predictions were built, split by age, gender and overall analysis. This is the project's <b>Data Science Product</b>, and it can be accessed from anywhere in a Streamlit App.</p>
 
 
 <div align="center">
@@ -254,7 +254,7 @@ In this project the main objective was accomplished:
 ```
 <p align="justify"> Further on, this solution could be improved by a few strategies:
   
- - Creating even more features from the existent ones.
+ - Creating even more features from the existing ones.
  - Try other classification algorithms, such as Neural Networks.
  - Using a paid Cloud, such as AWS.
  
